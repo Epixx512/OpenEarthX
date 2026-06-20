@@ -1,0 +1,9 @@
+Package: com.podpod123.openearthx
+Name: OpenEarthX
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Functional recreation of the EarthX by Requis
+Maintainer: Pod
+Author: Pod
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 5.0)
