@@ -25,7 +25,7 @@
             [newReq setValue:@"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6.1 Safari/605.1.15" forHTTPHeaderField:@"User-Agent"];
             if ([url.path isEqualToString:@"/dbRoot.v5"]) {
                 NSString *query = url.query;
-                if (query && [query rangeOfString:@"type=embedded"].location != NSNotFound) {
+                if (query && [query rangeOfString:@"&type=embedded"].location != NSNotFound) {
                     NSString *newQuery = [query stringByReplacingOccurrencesOfString:@"&type=embedded" withString:@""];
                     NSString *newURLStr = [[url absoluteString] stringByReplacingOccurrencesOfString:query withString:newQuery];
                     newReq.URL = [NSURL URLWithString:newURLStr];
