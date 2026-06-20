@@ -1,2 +1,1 @@
-# OpenEarthX
-Functional recreation of the EarthX by Requis
+tweak i quickly made because the original EarthX tweak by Requis no longer functions as intended. google changed something on their server, and this tweak accounts for that. the original EarthX, as far as i know, isn't open source. so i just made a new tweak that does the same thing, with some additional functionality. OpenEarthX also removes the type query parameter on kh.google.com/dbRoot.v5 if it's present with the value `embedded`. without this change, that request would receive a 404 Not Found HTTP error in the response.
